@@ -126,17 +126,17 @@ def main():
 
     print("Running evaluation with high quality data:")
     evaluate(
-        image_dir="Assignment/code/data/extracted/high",
-        model_file="Assignment/code/data/model.high.json.gz",
-        puzzle_data="Assignment/code/data/puzzles.dev.json",
+        image_dir="code/data/extracted/high",
+        model_file="code/data/model.high.json.gz",
+        puzzle_data="code/data/puzzles.dev.json",
         display=args.display,
     )
 
     print("\nRunning evaluation with low quality data:")
     evaluate(
-        image_dir="Assignment/code/data/extracted/low",
-        model_file="Assignment/code/data/model.low.json.gz",
-        puzzle_data="Assignment/code/data/puzzles.dev.json",
+        image_dir="code/data/extracted/low",
+        model_file="code/data/model.low.json.gz",
+        puzzle_data="code/data/puzzles.dev.json",
         display=args.display,
     )
 

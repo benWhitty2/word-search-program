@@ -48,16 +48,16 @@ def main():
 
     print("Training the model with the high quality images.")
     train(
-        puzzle_file="Assignment/code/data/puzzles.train.json",
-        image_dir="Assignment/code/data/extracted/high",
-        model_file="Assignment/code/data/model.high.json.gz",
+        puzzle_file="data/puzzles.train.json",
+        image_dir="data/extracted/high",
+        model_file="data/model.high.json.gz",
     )
 
     print("Training the model with the low quality images.")
     train(
-        puzzle_file="Assignment/code/data/puzzles.train.json",
-        image_dir="Assignment/code/data/extracted/low",
-        model_file="Assignment/code/data/model.low.json.gz",
+        puzzle_file="data/puzzles.train.json",
+        image_dir="data/extracted/low",
+        model_file="data/model.low.json.gz",
     )
 
     print("All done.")

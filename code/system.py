@@ -153,6 +153,7 @@ def find_words(labels: np.ndarray, words: List[str], model: dict) -> List[tuple]
             if dx != 0 or dy != 0:
                 #checks through all relevant lengths from start position for matches
                 while len(max(words, key=len)) > (count) and inBounds(ix+count*dx,iy+count*dy,x,y):
+                    nwords = list(filter(lambda word: len(word) == (count+1), words))
                     for word in nwords:#checks all words of same length for better match
                         ind = words.index(word)
                         #if better match reassigns position and value
